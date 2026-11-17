@@ -1,0 +1,33 @@
+.DS_Store
+/.env
+/.env.*
+!/.env.example
+/vendor/
+/composer.phar
+/config/database.php
+/config/mail.local.php
+/storage/contacts.log
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/rate_limit/*
+!/storage/rate_limit/.gitkeep
+/uploads/client_logos/*
+!/uploads/client_logos/.gitkeep
+/uploads/support_tickets/*
+!/uploads/support_tickets/.gitkeep
+/uploads/portfolio/*
+!/uploads/portfolio/.gitkeep
+/uploads/showcase_apps/*
+!/uploads/showcase_apps/.gitkeep
+
+# Backup des images originales (avant compression perf)
+/images/original/
+
+# Artefacts locaux / deploy
+/_force_deploy/
+/*.zip
+/_*.zip
+/_push_deploy.html
+/_deploy_recv.php
+/_sec_update.zip
+/goo-bridge-*.zip

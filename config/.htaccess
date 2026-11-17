@@ -1,0 +1,8 @@
+# Interdit l’accès HTTP direct aux fichiers de configuration (DB, SMTP, secrets).
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+</IfModule>
